@@ -6,7 +6,7 @@
 typedef struct std
 {
     int roll_no,age;
-    char name[32];
+    char name[33];
     char gender, section,ph_no[15],pincode[10];
     struct std *next;
 }node;
@@ -26,7 +26,7 @@ node *delete(node *,int);
  
 void main(){
     node *start;
-    char ndata[32],pdata[15];
+    char ndata[33],pdata[15];
     int rdata,ch,item,pos;
     start=NULL;
     do
@@ -100,7 +100,7 @@ void main(){
 node *create()
 {
     int roll_no,flag = 1,age;
-    char Name[32],gender,ph_no[15],pincode[10];
+    char Name[33],gender,ph_no[15],pincode[10];
     char section;
     char ans='y';
     node *tempr,*new,*start;
@@ -198,7 +198,7 @@ void totcount(node *start)
     printf("Number of elements are %d\n",count);
 }
 
-void search_name(node *start,char ndata[32])
+void search_name(node *start,char ndata[33])
 {
     node *p;
     p=start;
