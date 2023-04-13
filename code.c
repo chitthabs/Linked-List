@@ -209,10 +209,7 @@ void search_name(node *start,char ndata[32])
     while(p!=NULL)
     {
         if(strcmp(p->name,ndata)==0)
-        {
-            printf("Item %s found at position %d\n",ndata,pos);
-            return;
-        }
+        printf("Item %s found at position %d\n",ndata,pos);
         p=p->next;
         pos++;
     }
@@ -227,10 +224,7 @@ void search_rollno(node *start,int rdata)
     while(p!=NULL)
     {
         if(p->roll_no==rdata)
-        {
-            printf("Item %d found at position %d\n",rdata,pos);
-            return;
-        }
+        printf("Item %d found at position %d\n",rdata,pos);
         p=p->next;
         pos++;
     }
@@ -245,10 +239,7 @@ void search_phno(node *start,char pdata[15])
     while(p!=NULL)
     {
         if(strcmp(p->ph_no,pdata)==0)
-        {
-            printf("Item %s found at position %d\n",pdata,pos);
-            return;
-        }
+        printf("Item %s found at position %d\n",pdata,pos);
         p=p->next;
         pos++;
     }
